@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Modern Negra";
+    src: url("/fonts/Modern Negra Demo.ttf") format("truetype");
+}
+
+@utility flex-center {
+    @apply flex justify-center items-center;
+}
+
+
+@utility text-gradient {
+    background: linear-gradient(to bottom, #ffffff, #898989);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+@theme {
+    --color-yellow: #e7d393;
+    --color-white-100: #efefef;
+    --font-sans: "Mona Sans", sans-serif;
+    --font-family: "Lexend Exa", sans-serif;
+    --font-modern-negra: "Modern Negra", sans-serif;
+    --font-serif: "DM Serif Text", serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #075985, #111827);
+    color: white;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+
+@layer components {
+
+  nav {
+        @apply fixed z-50 w-full;
+
+        p {
+            @apply font-modern-negra text-3xl -mb-2;
+        }
+
+        a {
+            @apply cursor-pointer text-nowrap md:text-base text-sm;
+        }
+
+        .link-underline {
+            padding-bottom: 10px;
+            border-bottom-width: 0;
+            border-radius: 10px;
+            background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+            background-size: 0 3px;
+            background-position: 0 100%;
+            background-repeat: no-repeat;
+            transition: background-size .2s ease-in-out;
+        }
+
+        .link-underline-black {
+            background-image: linear-gradient(transparent, transparent), linear-gradient(90deg,rgba(203, 203, 227, 1) 0%, rgba(255, 255, 255, 1) 0%)
+        }
+
+        .link-underline:hover {
+            background-size: 100% 3px;
+            background-position: 0 100%;
+        }
+
+        .nav-font {
+            font-family: "Lexend Exa", sans-serif;
+            font-weight: 400;     
+        }
+        
+    }
+    .title {
+         @apply md:mt-10 text-5xl md:text-[5vw] font-modern-negra;
+    }
+    .greet {
+        @apply md:mt-20 text-5xl md:text-[2vw];
+        font-family: "Lexend Exa", sans-serif;
+        font-weight: 600;     
+    }
+
+    p {
+         font-family: "Lexend Exa", sans-serif;
+         font-size: medium;
+         font-weight: 400;
+    }
+
+    span {
+        font-family: "Lexend Exa", sans-serif;
+        font-size: medium;
+        font-weight: 600;
+    }
+
+}
