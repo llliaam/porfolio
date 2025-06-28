@@ -43,7 +43,7 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <li key={link.id} className='group'>
               <a href={`#${link.id}`} className='text-sm lg:text-base'>
-                <span className='link link-underline link-underline-black hover:text-indigo-400 transition-colors'>
+                <span className='link link-underline link-underline-black hover:text-[#FADA7A] transition-colors'>
                   {link.title}
                 </span>
               </a>
@@ -73,7 +73,7 @@ const Navbar = () => {
             <li key={link.id}>
               <a 
                 href={`#${link.id}`}
-                className='block px-6 py-3 text-white hover:bg-white/10 hover:text-indigo-400 transition-all text-sm sm:text-base'
+                className='block px-6 py-3 text-white hover:bg-white/10 hover:text-[#FADA7A] transition-all text-sm sm:text-base'
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.title}
