@@ -32,7 +32,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="w-full fixed top-0 z-50">
+    <nav className="fixed top-0 left-0 right-0 z-50" style={{ width: 'calc(100vw - var(--scrollbar-width, 0px))' }}>
       <div className='filter flex items-center justify-between py-4 sm:py-6 md:py-8 lg:py-10 px-4 sm:px-6 md:px-8 lg:px-30'>
         <a href="#home" className='nav-font flex items-center gap-2 font-bold text-base sm:text-lg md:text-xl truncate'>
           <span className='hidden sm:inline'>William Benediktus</span>
@@ -65,9 +65,9 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-      <div className={`md:hidden fixed top-[60px] sm:top-[72px] left-0 right-0 bg-black/90 backdrop-blur-md transition-all duration-300 ${
+      <div className={`md:hidden fixed top-[60px] sm:top-[72px] left-0 bg-black/90 backdrop-blur-md transition-all duration-300 ${
         isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
-      }`}>
+      }`} style={{ right: 'var(--scrollbar-width, 0px)' }}>
         <ul className='flex flex-col py-4'>
           {navLinks.map((link) => (
             <li key={link.id}>

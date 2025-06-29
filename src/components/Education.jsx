@@ -52,7 +52,7 @@ const Education = () => {
     gsap.from('.content-card-mobile', {
       scrollTrigger: {
         trigger: '.content-card-mobile',
-        start: '20px 80%',
+        start: 'clamp(20px 80%)',
         scrub: 1,
       },
       opacity: 0,
@@ -92,8 +92,8 @@ const Education = () => {
   }, [])
 
   useGSAP(() => {
-    gsap.from('.education-title, .education-subtitle', {
-      scrollTriger: {
+    gsap.from('.education-title', {
+      scrollTrigger: {
         trigger: 'education-title',
         start: "10px 90%",
         scrub: 2,
