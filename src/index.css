@@ -24,7 +24,7 @@
     --color-yellow: #e7d393;
     --color-white-100: #efefef;
     --font-sans: "Mona Sans", sans-serif;
-    --font-family: "Lexend Exa", sans-serif;
+    --font-lexend-exa: "Lexend Exa", sans-serif;
     --font-modern-negra: "Modern Negra", sans-serif;
     --font-serif: "DM Serif Text", serif;
 }
@@ -104,6 +104,10 @@ body {
     .education {
         
         background-color: #181C14;
+    }
+    
+    #education {
+        @apply font-lexend-exa
     }
 
 }
