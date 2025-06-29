@@ -49,8 +49,8 @@ const Header = () => {
                     {/* Text Content */}
                     <div className='flex flex-col w-full lg:max-w-[45%] xl:max-w-[40%] order-2 lg:order-1'>
                         <h1 className='greet text-lg sm:text-xl md:text-2xl mb-2'>Hi, I'm</h1>
-                        <h1 className='title text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-4 lg:mb-6'>
-                            <span className="text-gradient">William Bendiktus</span>
+                        <h1 className='title leading-tight mb-4 lg:mb-6'>
+                            <span className="text-gradient">William Benediktus</span>
                         </h1>
                         <p className='description text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed mb-6 lg:mb-8 opacity-90'>
                             I am a third year Information Technology student at Universitas Sumatera Utara 
