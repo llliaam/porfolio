@@ -43,7 +43,7 @@ const Header = () => {
     }, [])
     
     return (
-        <section id="home" className='pt-[15vh] sm:pt-[20vh] h-screen'>
+        <section id="home" className='pt-[15vh] sm:pt-[5vh] h-screen'>
             <div className='flex flex-col lg:flex-row lg:items-center lg:justify-between px-4 sm:px-6 md:px-8 lg:px-30 gap-8 lg:gap-20'>
                 <div className='flex flex-col w-full lg:max-w-[45%] xl:max-w-[40%]'>
                     <h1 className='greet text-lg sm:text-xl md:text-2xl'>Hi, I'm</h1>
