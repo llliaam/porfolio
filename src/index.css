@@ -39,7 +39,10 @@ body {
     color: #ECDFCC;
 }
 
-
+ #home {
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, #697565, #181C14);
+ }
 
 @layer components {
 
