@@ -7,8 +7,9 @@ const HeaderButton = () => {
         gsap.from(".button", {
             yPercent: 110,
             ease: 'expo.out',
-            duration: 1.8,
+            duration: 1.5,
             opacity: 0,
+            delay: 1.7,
         });
     }, [])
 

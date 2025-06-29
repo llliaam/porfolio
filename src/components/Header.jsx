@@ -30,19 +30,20 @@ const Header = () => {
             opacity: 0,
             yPercent: 100,
             ease: 'back.out',
-            duration: 1.8,
+            stagger: 0.3,
+            duration: 1,
         });
 
         gsap.from(".profile", {
             yPercent: 30,
             opacity: 0,
             ease: 'expo.out',
-            duration: 1.8,
+            duration: 2,
         });
     }, [])
     
     return (
-        <section className='pt-[15vh] sm:pt-[20vh]'>
+        <section id="home" className='pt-[15vh] sm:pt-[20vh] h-screen'>
             <div className='flex flex-col lg:flex-row lg:items-center lg:justify-between px-4 sm:px-6 md:px-8 lg:px-30 gap-8 lg:gap-20'>
                 <div className='flex flex-col w-full lg:max-w-[45%] xl:max-w-[40%]'>
                     <h1 className='greet text-lg sm:text-xl md:text-2xl'>Hi, I'm</h1>
@@ -50,7 +51,7 @@ const Header = () => {
                         William Bendiktus
                     </h1>
                     <p className='description text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed mt-4 lg:mt-6'>
-                        I am a second year Information Technology student at Universitas Sumatera Utara 
+                        I am a third year Information Technology student at Universitas Sumatera Utara 
                         with a strong focus on backend development. I am passionate about building efficient 
                         and scalable systems, and continuously improving my skills in web technologies and programming.
                     </p>
