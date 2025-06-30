@@ -37,6 +37,7 @@ body {
     height: 100%;
     background: linear-gradient(to bottom, #697565, #181C14);
     color: #ECDFCC;
+    scroll-behavior: smooth;
 }
 
  #home {
@@ -83,11 +84,12 @@ body {
         }
         
     }
+
     .title {
-         @apply md:mt-10 text-5xl md:text-[5vw];
+         @apply md:mt-10 text-5xl md:text-[50px];
 
         span {
-            font-size: 48px;
+            font-size: 36px;
             @apply font-notable;
             font-weight: 800;
         }
@@ -116,7 +118,7 @@ body {
     }
     
     #education {
-        @apply font-lexend-exa
+        @apply font-lexend-exa;
     }
 
 }
