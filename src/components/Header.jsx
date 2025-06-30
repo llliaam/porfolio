@@ -52,7 +52,7 @@ const Header = () => {
                         <h1 className='title leading-tight mb-4 lg:mb-6'>
                             <span className="text-gradient">William Benediktus</span>
                         </h1>
-                        <p className='description text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed mb-6 lg:mb-8 opacity-90'>
+                        <p className='description text-[10px] font-bold sm:text-base md:text-lg lg:text-xl leading-relaxed mb-6 lg:mb-8 opacity-90'>
                             I am a third year Information Technology student at Universitas Sumatera Utara 
                             with a strong focus on backend development. I am passionate about building efficient 
                             and scalable systems, and continuously improving my skills in web technologies and programming.
