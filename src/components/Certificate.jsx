@@ -3,7 +3,7 @@ import Button from './certificate/Button'
 
 const Certificate = () => {
   return (
-    <div className='education py-[50px] lg:py-[10px] px-[5px] lg:px-[20rem]'>
+    <div className='education py-[50px] lg:py-[10px] px-[5px] lg:px-[20rem] flex flex-col gap-[50px]'>
         <div className='certificate-title text-center py-10 font-lexend-exa'>
             <h1 className='font-bold text-3xl lg:pb-20'>My Certificate</h1>
         </div>
