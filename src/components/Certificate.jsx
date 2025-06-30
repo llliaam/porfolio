@@ -1,5 +1,6 @@
 import React from 'react'
-import Button from './certificate/Button'
+import Button from './CertificateSection/Button'
+
 
 const Certificate = () => {
   return (
